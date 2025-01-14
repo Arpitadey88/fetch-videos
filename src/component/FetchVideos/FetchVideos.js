@@ -18,8 +18,13 @@ const FetchVideos = () => {
         }
         fetchYoutubeData();
     return (
-        <div>
-            <h2>fetch videos</h2>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:p-8">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8">
+                <div className="h-32 rounded-lg bg-gray-200"></div>
+                <div className="h-32 rounded-lg bg-gray-200"></div>
+                <div className="h-32 rounded-lg bg-gray-200"></div>
+                <div className="h-32 rounded-lg bg-gray-200"></div>
+            </div>
         </div>
     );
 };
