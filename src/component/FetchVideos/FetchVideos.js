@@ -14,7 +14,7 @@ const FetchVideos = () => {
                         `${YOUTUBE_PLAYLISTS_ITEM_API}?part=snippet&playlistId=UULF9J48NTCqKe74-OCsWxcsQA&maxResults=10&key=${apiKey}`
                     );
                     const data = await res.json();
-    console.log('object',data);
+                    console.log('object',data);
                     if (data.items) {
                         setVideos(data.items);
                     } else {
@@ -27,6 +27,7 @@ const FetchVideos = () => {
     
             fetchYoutubeData();
         }, [apiKey]);
+
     return (
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:p-8">
            
